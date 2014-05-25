@@ -19,7 +19,7 @@ import org.testng.annotations.Test;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class IteratorTest {
     
@@ -30,10 +30,10 @@ public class IteratorTest {
     // The methods must be annotated with annotation @Test. For example:
     //
      @Test
-     public void hello() {
-         Item i = new Item("cheese snackwhich", 12.59f);
-         Item i1 = new Item("chicken snackwhich", 18.59f);
-         Item i2 = new Item("steak snackwhich", 24.59f);
+     public void iteratorTest() {
+         Item i = new Item("Bacon & Egg", 14.59f);
+         Item i1 = new Item("chicken & Salad", 13.59f);
+         Item i2 = new Item("Chicken & Mayo", 11.59f);
          
          Menu menu = new Menu();
          menu.addItem(i);

@@ -8,7 +8,7 @@ package ObserverPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public interface WeatherSubject {
     public void addObserver(WeatherObserver weatherObserver);

@@ -23,7 +23,7 @@ import org.testng.annotations.Test;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class VisitorPatternTest {
     
@@ -34,7 +34,7 @@ public class VisitorPatternTest {
     // The methods must be annotated with annotation @Test. For example:
     //
      @Test
-     public void hello() {
+     public void visitTest() {
          TwoElement two1 = new TwoElement(3,9);
          ThreeElement three1 = new ThreeElement(3,6,9);
          List<NumberElement> numberElements = new ArrayList<>();

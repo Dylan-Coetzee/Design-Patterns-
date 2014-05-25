@@ -4,12 +4,12 @@
  * and open the template in the editor.
  */
 
-package IterpreterPattern;
+package ChainOfReposibility;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
-public interface Expression {
-    public boolean interpreter(String context);
+public enum VehicleEnum {
+    MAYBACH, FERRARI, BENZ, PORSCHE, NISSAN, VOLKSWAGEN;
 }

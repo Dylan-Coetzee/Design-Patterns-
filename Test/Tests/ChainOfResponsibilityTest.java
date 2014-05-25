@@ -6,10 +6,10 @@
 
 package Tests;
 
-import ChainOfReposibility.CarEnum;
+import ChainOfReposibility.VehicleEnum;
 import ChainOfReposibility.CarHandler;
-import ChainOfReposibility.DatsunHandler;
-import ChainOfReposibility.ToyotaHandler;
+import ChainOfReposibility.MaybachHandler;
+import ChainOfReposibility.FerrariHandler;
 import org.testng.Assert;
 import static org.testng.Assert.*;
 import org.testng.annotations.AfterClass;
@@ -20,7 +20,7 @@ import org.testng.annotations.Test;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class ChainOfResponsibilityTest {
     
@@ -31,16 +31,16 @@ public class ChainOfResponsibilityTest {
     // The methods must be annotated with annotation @Test. For example:
     //
     public static CarHandler setUpChain(){
-     CarHandler toyotaHandler = new ToyotaHandler();
-     CarHandler datsunHandler = new DatsunHandler();
-     toyotaHandler.setSuccessor(datsunHandler);
-     return toyotaHandler;
+     CarHandler ferrariHandler = new FerrariHandler();
+     CarHandler maybachHandler = new MaybachHandler();
+     ferrariHandler.setSuccessor(maybachHandler);
+     return ferrariHandler;
     }
     
      @Test
      public void hello() {
          CarHandler chain = setUpChain();
-         chain.handleRequest(CarEnum.TOYOTA);
+         chain.handleRequest(VehicleEnum.MAYBACH);
          Assert.assertNotNull(chain);
      }
 

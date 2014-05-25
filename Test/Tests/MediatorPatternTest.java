@@ -21,7 +21,7 @@ import org.testng.annotations.Test;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class MediatorPatternTest {
     
@@ -32,7 +32,7 @@ public class MediatorPatternTest {
     // The methods must be annotated with annotation @Test. For example:
     //
      @Test
-     public void hello() {
+     public void mediatorTest() {
          Mediator m = new Mediator();
          Buyer swed = new SwedishBuyer(m);
          float sellingPriceInDollars = 10.0f;

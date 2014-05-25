@@ -6,9 +6,10 @@
 
 package Tests;
 
-import IterpreterPattern.Expression;
-import IterpreterPattern.OrExpression;
-import IterpreterPattern.TerminalExpression;
+import InterpreterPattern.AndExpression;
+import InterpreterPattern.Expression;
+import InterpreterPattern.OrExpression;
+import InterpreterPattern.TerminalExpression;
 import org.testng.Assert;
 import static org.testng.Assert.*;
 import org.testng.annotations.AfterClass;
@@ -19,7 +20,7 @@ import org.testng.annotations.Test;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class InterpreterTest {
     
@@ -29,17 +30,30 @@ public class InterpreterTest {
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
-    public static Expression getMale(){
-        Expression manfred = new TerminalExpression("Manfred");
-        Expression jimi = new TerminalExpression("jimi");
-        return new OrExpression(manfred, jimi);
+    public static Expression getMaleExpression(){
+        Expression robert = new TerminalExpression("Robert");
+        Expression john = new TerminalExpression("John");
+        return new OrExpression(robert, john);
     }
+    
+    public static Expression getMarriedWomanExpression(){
+      Expression julie = new TerminalExpression("Julie");
+      Expression married = new TerminalExpression("Married");
+      return new AndExpression(julie, married);		
+   }
+    
      @Test
-     public void hello() {
-         Expression isMan = getMale();
-         Assert.assertEquals(isMan.interpreter("eddy"), false);
+     public void testOrExpression() {
+         Expression isMale = getMaleExpression();
+         Assert.assertEquals(isMale.interpreter("Robert"), true);
      }
 
+     @Test
+     public void testAndExpression() {
+         Expression isMarried = getMaleExpression();
+         Assert.assertEquals(isMarried.interpreter("Julie"), false);
+     }
+     
     @BeforeClass
     public static void setUpClass() throws Exception {
     }

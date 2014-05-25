@@ -4,11 +4,11 @@
  * and open the template in the editor.
  */
 
-package CompositePatter;
+package CompositePattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class Leaf implements Component{
     

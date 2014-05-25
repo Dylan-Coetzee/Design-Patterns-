@@ -8,7 +8,7 @@ package MediatorPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class Mediator {
     Buyer swedishBuyer;

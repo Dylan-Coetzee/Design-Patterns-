@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class PrototypeTest {
     
@@ -28,10 +28,10 @@ public class PrototypeTest {
     // The methods must be annotated with annotation @Test. For example:
     //
      @Test
-     public void hello(){
-         Human h = new Human("Matt", "Tennese");
+     public void protoTest(){
+         Human h = new Human("Dylan", "Coetzee");
          Human h2 = (Human) h.doClone();
-         Assert.assertEquals(h2.getName(), "Matt");
+         Assert.assertEquals(h2.getName(), "Dylan");
      }
 
     @BeforeClass

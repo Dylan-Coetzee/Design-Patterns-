@@ -18,7 +18,7 @@ import org.testng.annotations.Test;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class MementoTest {
     
@@ -29,10 +29,10 @@ public class MementoTest {
     // The methods must be annotated with annotation @Test. For example:
     //
      @Test
-     public void hello() {
+     public void mementoRunTest() {
          DietInfoCaretaker dic = new DietInfoCaretaker();
          
-         DietInfo dietInfo = new DietInfo("Jack", 1, 100);
+         DietInfo dietInfo = new DietInfo("Dylan", 1, 100);
          dic.saveState(dietInfo);
          Assert.assertNotNull(dietInfo);
          

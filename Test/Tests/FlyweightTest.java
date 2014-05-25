@@ -29,7 +29,7 @@ public class FlyweightTest {
     // The methods must be annotated with annotation @Test. For example:
     //
      @Test
-     public void hello() {
+     public void flyTest() {
          FlyweightFactory flf = FlyweightFactory.getInstance();
          
          Flyweight flyweightAdder = flf.getFlyweight("add");

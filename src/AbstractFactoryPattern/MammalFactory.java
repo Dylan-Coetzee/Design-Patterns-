@@ -10,10 +10,16 @@ package AbstractFactoryPattern;
  *
  * @author Dylan
  */
-public class AbstractFactory {
-    public SpeciesFactory getSpeciesFactory(String type){
-        if("mammal".equals(type)){
-            return new MammalFactory();
-        }else return new ReptileFactory();
+public class MammalFactory extends SpeciesFactory{
+
+    @Override
+    public Animal getAnimal(String type) {
+       if("dog".equals(type)){
+           return new Dog();
+       }else{
+          return new Cat(); 
+       } 
+           
     }
+    
 }

@@ -4,12 +4,14 @@
  * and open the template in the editor.
  */
 
-package ObserverPattern;
+package BuilderPattern;
 
 /**
  *
- * @author Dylan
+ * @author Kurvin Hendricks
  */
-public interface WeatherObserver {
-    public void doUpdate(int tempreature);
+public interface MealBuilder {
+    public void buildDrink();
+    public void buildMainCourse();
+    public Meal getMeal();
 }

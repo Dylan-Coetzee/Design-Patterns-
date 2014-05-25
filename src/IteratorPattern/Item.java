@@ -8,7 +8,7 @@ package IteratorPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class Item {
     String name;

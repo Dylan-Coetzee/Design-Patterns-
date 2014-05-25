@@ -8,29 +8,29 @@ package BuilderPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
-public class WorkPerson implements PersonBuilder{
+public class ItalianMealBuilder implements MealBuilder{
     
-    private Person p;
+    private Meal m;
         
-    public WorkPerson(){
-        p = new Person();
+    public ItalianMealBuilder(){
+        m = new Meal();
     }
     
     @Override
-    public void buildName() {
-        p.setName("Kurvin");
+    public void buildDrink() {
+        m.setDrink("Coke");
     }
 
     @Override
-    public void buildSurname() {
-        p.setSurname("Hendricks");
+    public void buildMainCourse() {
+        m.setMainCourse("Sea Food");
     }
 
     @Override
-    public Person getPerson() {
-        return p;
+    public Meal getMeal() {
+        return m;
     }
     
 }

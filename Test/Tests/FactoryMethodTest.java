@@ -18,7 +18,7 @@ import org.testng.annotations.Test;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class FactoryMethodTest {
     
@@ -29,10 +29,10 @@ public class FactoryMethodTest {
     // The methods must be annotated with annotation @Test. For example:
     //
      @Test
-     public void testFactoryMethod() {
+     public void FactoryMethodRunTest() {
          AnimalFactory af = new AnimalFactory();
-         Animal a = af.getAnimal("milk");
-         Assert.assertEquals(a.makeSound(), "Mooo");
+         Animal a = af.getAnimal("cat");
+         Assert.assertEquals(a.makeSound(), "meow");
      }
 
     @BeforeClass

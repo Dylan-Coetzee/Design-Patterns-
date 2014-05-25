@@ -8,7 +8,7 @@ package AdapterPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class CelciusReporter {
     double tempCelcius;

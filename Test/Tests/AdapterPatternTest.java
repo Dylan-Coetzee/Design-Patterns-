@@ -6,8 +6,8 @@
 
 package Tests;
 
-import AdapterPattern.TempInfo;
-import AdapterPattern.TempReporter;
+import AdapterPattern.TemperatureInfo;
+import AdapterPattern.TemperatureReporter;
 import org.testng.Assert;
 import static org.testng.Assert.*;
 import org.testng.annotations.AfterClass;
@@ -18,7 +18,7 @@ import org.testng.annotations.Test;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class AdapterPatternTest {
     
@@ -29,9 +29,9 @@ public class AdapterPatternTest {
     // The methods must be annotated with annotation @Test. For example:
     //
      @Test
-     public void hello(){
-         TempInfo ti = new TempReporter();
-         ti.setTempCelcius(25);
+     public void TestTemp(){
+         TemperatureInfo ti = new TemperatureReporter();
+         ti.setTempCelcius(28);
          Assert.assertNotEquals(ti.getTempFahrenheit(), ti.getTempCelcius());
      }
 

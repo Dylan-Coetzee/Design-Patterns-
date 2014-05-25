@@ -8,12 +8,13 @@ package FactoryMethodPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class AnimalFactory {
     public Animal getAnimal(String type){
-        if("mary".equals(type)){
-            return new Sheep();
-        }else return new Cow();
+        if("canine".equals(type)){
+            return new Dog();
+        }else
+            return new Cat();
     }
 }

@@ -8,7 +8,7 @@ package CommandPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class MealInvoker {
     Command command;

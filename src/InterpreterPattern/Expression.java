@@ -4,12 +4,13 @@
  * and open the template in the editor.
  */
 
-package ChainOfReposibility;
+package InterpreterPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
+ * http://www.tutorialspoint.com/design_pattern/interpreter_pattern.htm
  */
-public enum CarEnum {
-    TOYOTA, NISSAN, DATSUN, PORSCHE;
+public interface Expression {
+    public boolean interpreter(String context);
 }

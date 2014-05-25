@@ -19,7 +19,7 @@ import org.testng.annotations.Test;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class TemplateMethodTest {
     
@@ -30,7 +30,7 @@ public class TemplateMethodTest {
     // The methods must be annotated with annotation @Test. For example:
     //
      @Test
-     public void hello() {
+     public void templateTest() {
          Meal m = new HamburgerMeal();
          m.doMeal();
          Assert.assertNotNull(m);

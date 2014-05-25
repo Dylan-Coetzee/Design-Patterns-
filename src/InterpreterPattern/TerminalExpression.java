@@ -4,11 +4,12 @@
  * and open the template in the editor.
  */
 
-package IterpreterPattern;
+package InterpreterPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
+ * http://www.tutorialspoint.com/design_pattern/interpreter_pattern.htm
  */
 public class TerminalExpression implements Expression{
     private String data;
@@ -21,6 +22,7 @@ public class TerminalExpression implements Expression{
     public boolean interpreter(String context) {
         if(context.contains(data)){
             return true;
-        }else return false;
+        }else 
+            return false;
     }
 }

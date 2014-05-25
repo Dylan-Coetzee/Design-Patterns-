@@ -19,7 +19,7 @@ import org.testng.annotations.Test;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class DecoratorTest {
     
@@ -30,7 +30,7 @@ public class DecoratorTest {
     // The methods must be annotated with annotation @Test. For example:
     //
      @Test
-     public void hello() {
+     public void DecorTest() {
          Animal a = new LivingAnimal();
          Assert.assertNotNull(a);
          a = new LegDecorator(a);

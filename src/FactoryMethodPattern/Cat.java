@@ -4,18 +4,17 @@
  * and open the template in the editor.
  */
 
-package AbstractFactoryPattern;
+package FactoryMethodPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
-public class Crab extends Animal{
+public class Cat extends Animal {
 
     @Override
     public String makeSound() {
-        
-        return "scratch";
+        return "meow";
     }
     
 }

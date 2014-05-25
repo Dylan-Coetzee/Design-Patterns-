@@ -8,9 +8,9 @@ package AdapterPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
-public interface TempInfo {
+public interface TemperatureInfo {
     public double getTempFahrenheit();
     public void setTempFahrenheit(double tempFahrenheit);
     public double getTempCelcius();

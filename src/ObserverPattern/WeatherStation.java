@@ -12,7 +12,7 @@ import java.util.Set;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class WeatherStation implements WeatherSubject{
     Set<WeatherObserver> weatherObservers;

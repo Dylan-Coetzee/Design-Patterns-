@@ -8,7 +8,7 @@ package ChainOfReposibility;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public abstract class CarHandler {
     CarHandler successor;
@@ -17,5 +17,5 @@ public abstract class CarHandler {
         this.successor = successor;
     }
     
-    public abstract void handleRequest(CarEnum request);
+    public abstract void handleRequest(VehicleEnum request);
 }

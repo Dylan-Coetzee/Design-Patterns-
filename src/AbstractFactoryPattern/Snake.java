@@ -4,14 +4,16 @@
  * and open the template in the editor.
  */
 
-package BuilderPattern;
+package AbstractFactoryPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
-public interface PersonBuilder {
-    public void buildName();
-    public void buildSurname();
-    public Person getPerson();
+class Snake extends Animal{
+
+    @Override
+    public String makeSound() {
+      return "Ssssss";
+    }
 }

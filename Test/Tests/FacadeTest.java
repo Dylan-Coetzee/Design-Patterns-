@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class FacadeTest {
     
@@ -28,7 +28,7 @@ public class FacadeTest {
     // The methods must be annotated with annotation @Test. For example:
     //
      @Test
-     public void hello() {
+     public void FacadeRunTest() {
          Facade f = new Facade();
          int x = 8;
          Assert.assertEquals(f.cubeX(x), (x*x*x));

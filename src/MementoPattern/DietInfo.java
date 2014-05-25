@@ -8,7 +8,7 @@ package MementoPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class DietInfo {
     String personName;

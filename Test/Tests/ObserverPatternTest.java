@@ -19,7 +19,7 @@ import org.testng.annotations.Test;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class ObserverPatternTest {
     
@@ -30,7 +30,7 @@ public class ObserverPatternTest {
     // The methods must be annotated with annotation @Test. For example:
     //
      @Test
-     public void hello() {
+     public void ObserveTest() {
          WeatherStation ws = new WeatherStation(65);
          WeatherCustomer1 w1 = new WeatherCustomer1();
          WeatherCustomer2 w2 = new WeatherCustomer2();

@@ -8,7 +8,7 @@ package DecoratorPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public abstract class AnimalDecorator implements Animal{
     Animal animal;

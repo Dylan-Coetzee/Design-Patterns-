@@ -8,15 +8,12 @@ package AbstractFactoryPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
-public class BirdFactory extends SpeciesFactory{
+class Tyrannosaurus extends Animal{
 
     @Override
-    public Animal getAnimal(String type) {
-       if("chicken".equals(type)){
-           return new Chicken();
-       }else return null;
-    }
-    
+    public String makeSound() {
+      return "Roar";
+    }  
 }

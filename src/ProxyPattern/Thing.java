@@ -10,7 +10,7 @@ import java.util.Date;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public abstract class Thing {
     public void sayHello(){

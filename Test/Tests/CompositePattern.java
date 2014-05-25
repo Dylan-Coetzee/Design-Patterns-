@@ -6,8 +6,8 @@
 
 package Tests;
 
-import CompositePatter.Composite;
-import CompositePatter.Leaf;
+import CompositePattern.Composite;
+import CompositePattern.Leaf;
 import org.testng.Assert;
 import static org.testng.Assert.*;
 import org.testng.annotations.AfterClass;
@@ -18,7 +18,7 @@ import org.testng.annotations.Test;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class CompositePattern {
     

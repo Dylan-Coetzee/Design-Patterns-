@@ -8,15 +8,15 @@ package ChainOfReposibility;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
-public class ToyotaHandler extends CarHandler{
+public class FerrariHandler extends CarHandler{
 
     @Override
-    public void handleRequest(CarEnum request) {
-        if(request == CarEnum.TOYOTA)
-            System.out.println("ToyotaHandler handles " + request);
-        else System.out.println("ToyotaHnadler does not handle this " + request);
+    public void handleRequest(VehicleEnum request) {
+        if(request == VehicleEnum.FERRARI)
+            System.out.println("FERRARI Handler handles " + request);
+        else System.out.println("FERRARI Handler does not handle this " + request);
         if(successor != null){
             successor.handleRequest(request);
             

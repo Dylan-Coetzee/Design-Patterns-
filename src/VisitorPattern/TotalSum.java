@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class TotalSum implements NumberVisitor{
     

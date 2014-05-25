@@ -8,7 +8,7 @@ package ObserverPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class WeatherCustomer2 implements WeatherObserver{
  

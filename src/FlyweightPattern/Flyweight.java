@@ -8,7 +8,7 @@ package FlyweightPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public interface Flyweight {
     public void doMath(int a, int b);

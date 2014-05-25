@@ -8,7 +8,7 @@ package ProxyPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class SlowThing extends Thing{
 

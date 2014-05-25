@@ -4,14 +4,14 @@
  * and open the template in the editor.
  */
 
-package CompositePatter;
+package CompositePattern;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class Composite implements Component{
     List<Component> components = new ArrayList<>();

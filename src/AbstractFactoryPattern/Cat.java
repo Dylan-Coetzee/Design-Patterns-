@@ -4,13 +4,18 @@
  * and open the template in the editor.
  */
 
-package CompositePatter;
+package AbstractFactoryPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
-public interface Component {
-    public String sayHello();
-    public String sayGoodbye();
+public class Cat extends Animal{
+
+    @Override
+    public String makeSound() {
+        
+        return "Meow";
+    }
+    
 }

@@ -8,13 +8,13 @@ package AbstractFactoryPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
-public class Chicken extends Animal{
+public class Dog extends Animal{
 
     @Override
     public String makeSound() {
-      return "kakaaaa";
+      return "Woof";
     }
     
 }

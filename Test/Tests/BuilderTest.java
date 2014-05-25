@@ -8,7 +8,11 @@ package Tests;
 
 
 
-import BuilderPattern.WorkPerson;
+
+
+
+
+import BuilderPattern.ItalianMealBuilder;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -17,22 +21,22 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
-public class BuidlerTest {
+public class BuilderTest {
     
-    public BuidlerTest() {
+    public BuilderTest() {
     }
 
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
      @Test
-     public void builder() {
-         WorkPerson wp = new WorkPerson();
-         wp.buildName();
-         wp.buildSurname();
-         Assert.assertEquals(wp.getPerson().getName(), "Kurvin");
+     public void BuilderTest() {
+         ItalianMealBuilder IMB = new ItalianMealBuilder();
+         IMB.buildDrink();
+         IMB.buildMainCourse();
+         Assert.assertEquals(IMB.getMeal().getDrink(), "Coke");
      }
 
     @BeforeClass

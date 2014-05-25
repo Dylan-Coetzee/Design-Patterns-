@@ -8,7 +8,7 @@ package FacadePattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class Class2 {
     public int doMoreStuff(Class1 c1, int x){

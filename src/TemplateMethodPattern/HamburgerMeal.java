@@ -8,7 +8,7 @@ package TemplateMethodPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class HamburgerMeal extends Meal{
 

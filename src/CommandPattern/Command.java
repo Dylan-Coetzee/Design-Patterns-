@@ -8,7 +8,7 @@ package CommandPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public interface Command {
     public void execute();

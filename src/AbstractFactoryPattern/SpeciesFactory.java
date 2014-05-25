@@ -8,7 +8,7 @@ package AbstractFactoryPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public abstract class SpeciesFactory {
     public abstract Animal getAnimal(String type);

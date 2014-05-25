@@ -12,7 +12,7 @@ import java.util.List;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class Menu {
     List<Item> menuItems;

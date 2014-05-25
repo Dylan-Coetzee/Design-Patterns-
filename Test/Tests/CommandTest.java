@@ -19,7 +19,7 @@ import org.testng.annotations.Test;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class CommandTest {
     
@@ -30,7 +30,7 @@ public class CommandTest {
     // The methods must be annotated with annotation @Test. For example:
     //
      @Test
-     public void hello() {
+     public void CommandHandlerTest() {
          Lunch l = new Lunch();
          Command lc = new LunchCommand(l);
          Assert.assertNotNull(lc);

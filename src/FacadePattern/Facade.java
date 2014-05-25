@@ -8,7 +8,7 @@ package FacadePattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class Facade {
     public int cubeX(int x){

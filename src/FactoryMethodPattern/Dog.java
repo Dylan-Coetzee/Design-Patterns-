@@ -8,13 +8,13 @@ package FactoryMethodPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
-public class Cow extends Animal{
+public class Dog extends Animal{
 
     @Override
     public String makeSound() {
-       return "Mooo";
+       return "woof";
     }
     
 }

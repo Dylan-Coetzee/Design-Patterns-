@@ -18,7 +18,7 @@ import org.testng.annotations.Test;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class ProxyTest {
     
@@ -29,7 +29,7 @@ public class ProxyTest {
     // The methods must be annotated with annotation @Test. For example:
     //
      @Test
-     public void hello() {
+     public void testProxy() {
          FastThing f = new FastThing();
          Proxy proxy = new Proxy();
          proxy.sayHello();

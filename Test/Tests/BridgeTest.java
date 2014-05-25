@@ -7,6 +7,7 @@
 package Tests;
 
 import BridgePattern.BigBus;
+import BridgePattern.BigEngine;
 import BridgePattern.SmallEngine;
 import BridgePattern.Vehicle;
 import org.testng.Assert;
@@ -18,7 +19,7 @@ import org.testng.annotations.Test;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class BridgeTest {
     
@@ -29,11 +30,16 @@ public class BridgeTest {
     // The methods must be annotated with annotation @Test. For example:
     //
      @Test
-     public void hello() {
+     public void TestBridge() {
          Vehicle v = new BigBus(new SmallEngine());
-         Vehicle v1 = new BigBus(new SmallEngine());
          v.drive();
+         Vehicle v1 = new BigBus(new SmallEngine());
          Assert.assertEquals(v.getWeight(), v1.getWeight());
+         
+         Vehicle v2 = new BigBus(new BigEngine());
+         v2.drive();
+         Vehicle v3 = new BigBus(new BigEngine());
+         Assert.assertEquals(v2.getWeight(), v3.getWeight());
      }
 
     @BeforeClass

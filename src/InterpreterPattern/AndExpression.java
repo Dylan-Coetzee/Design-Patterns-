@@ -4,24 +4,24 @@
  * and open the template in the editor.
  */
 
-package IterpreterPattern;
+package InterpreterPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
+ * http://www.tutorialspoint.com/design_pattern/interpreter_pattern.htm
  */
 public class AndExpression implements Expression{
-    private Expression expr;
     private Expression expr1;
+    private Expression expr2;
 
-    public AndExpression(Expression expr, Expression expr1) {
-        this.expr = expr;
-        this.expr1 = expr1;
+    public AndExpression(Expression expression1, Expression expression2) {
+        this.expr1 = expression1;
+        this.expr2 = expression2;
     }
-    
     
     @Override
     public boolean interpreter(String context) {
-        return expr.interpreter(context) && expr1.interpreter(context);
+        return expr1.interpreter(context) && expr2.interpreter(context);
     }
 }

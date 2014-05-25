@@ -8,7 +8,7 @@ package PrototypePattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class Animal implements Prototype{
     String name;

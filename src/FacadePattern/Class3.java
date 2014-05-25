@@ -8,7 +8,7 @@ package FacadePattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class Class3 {
     public int doOtherRandomThings(Class1 c1, Class2 c2, int x){

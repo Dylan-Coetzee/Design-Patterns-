@@ -8,7 +8,7 @@ package StrategyPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class Context {
     int tempreatureInF;

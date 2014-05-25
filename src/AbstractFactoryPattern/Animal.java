@@ -10,7 +10,7 @@ import FactoryMethodPattern.*;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public abstract class Animal {
     public abstract String makeSound(); 

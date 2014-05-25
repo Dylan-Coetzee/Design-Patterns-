@@ -26,7 +26,8 @@ public abstract class Vehicle {
             System.out.println("The vehicle is not going at a fast speed");
         }else if((ratio >=3 )&&(ratio < 8)){
             System.out.println("The vehicle is going at an avegrage speed");
-        } else System.out.println("The vehicle is going at a slow speed ");
+        } else 
+            System.out.println("The vehicle is going at a slow speed ");
     }
 
     public Engine getEngine() {

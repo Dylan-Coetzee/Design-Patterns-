@@ -8,15 +8,17 @@ package AbstractFactoryPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
-public class CrustationFactory extends SpeciesFactory{
+public class ReptileFactory extends SpeciesFactory{
 
     @Override
     public Animal getAnimal(String type) {
-        if("crab".equals(type)){
-            return new Crab();
-        }else return null;
+        if("snake".equals(type)){
+            return new Snake();
+        }else{
+            return new Tyrannosaurus();
+        }
     }
     
 }

@@ -19,7 +19,7 @@ import org.testng.annotations.Test;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class StrategyTest {
     
@@ -30,8 +30,8 @@ public class StrategyTest {
     // The methods must be annotated with annotation @Test. For example:
     //
      @Test
-     public void hello() {
-         int temp = 60;
+     public void strategyRunTest() {
+         int temp = 90;
          Strategy ski = new SkiStrategy();
          Context context = new Context(temp, ski);
          Assert.assertEquals(context.getResult(), false);

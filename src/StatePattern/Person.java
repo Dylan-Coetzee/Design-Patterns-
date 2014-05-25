@@ -8,7 +8,7 @@ package StatePattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class Person implements EmotionalState{
     

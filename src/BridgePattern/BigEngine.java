@@ -8,7 +8,7 @@ package BridgePattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class BigEngine implements Engine{
     int bhp;

@@ -4,17 +4,13 @@
  * and open the template in the editor.
  */
 
-package FactoryMethodPattern;
+package CompositePattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
-public class Sheep extends Animal {
-
-    @Override
-    public String makeSound() {
-        return "baaaa";
-    }
-    
+public interface Component {
+    public String sayHello();
+    public String sayGoodbye();
 }

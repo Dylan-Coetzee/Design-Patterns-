@@ -18,7 +18,7 @@ import org.testng.annotations.Test;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class AbstractFactoryPattern {
     
@@ -29,12 +29,22 @@ public class AbstractFactoryPattern {
     // The methods must be annotated with annotation @Test. For example:
     //
      @Test
-     public void hello() {
+     public void AnimalTest() {
         AbstractFactory af = new AbstractFactory();
         
-        SpeciesFactory sf = af.getSpeciesFactory("bird");
-        Animal a = sf.getAnimal("chicken");
-        Assert.assertEquals(a.makeSound(), "kakaaaa");
+        SpeciesFactory sf = af.getSpeciesFactory("retitle");
+        Animal a = sf.getAnimal("snake");
+        Assert.assertEquals(a.makeSound(), "Ssssss");
+        
+        Animal a1 = sf.getAnimal("tyrannosaurus");
+        Assert.assertEquals(a1.makeSound(), "Roar");
+        
+        SpeciesFactory sf2 = af.getSpeciesFactory("mammal");
+        Animal a2 = sf2.getAnimal("dog");
+        Assert.assertEquals(a2.makeSound(), "Woof");
+        
+        Animal a3 = sf2.getAnimal("cat");
+        Assert.assertEquals(a3.makeSound(), "Meow"); 
      }
 
     @BeforeClass

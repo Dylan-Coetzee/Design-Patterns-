@@ -8,14 +8,14 @@ package AdapterPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
-public class TempObjReporter implements TempInfo
+public class TemperatureObjectReporter implements TemperatureInfo
 {
     
     CelciusReporter cr;
 
-    public TempObjReporter() {
+    public TemperatureObjectReporter() {
         cr = new CelciusReporter();
     }
     

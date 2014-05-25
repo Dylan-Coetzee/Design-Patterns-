@@ -8,9 +8,9 @@ package AdapterPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
-public class TempReporter extends CelciusReporter implements TempInfo{
+public class TemperatureReporter extends CelciusReporter implements TemperatureInfo{
     
     @Override
     public double getTempCelcius(){

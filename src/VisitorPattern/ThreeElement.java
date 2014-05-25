@@ -8,7 +8,7 @@ package VisitorPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class ThreeElement implements NumberElement{
     int a;

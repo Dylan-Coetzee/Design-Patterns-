@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public interface NumberVisitor {
     public void visit(TwoElement twoElement);

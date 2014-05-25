@@ -8,7 +8,7 @@ package DecoratorPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class GrowlDecorator extends AnimalDecorator{
 

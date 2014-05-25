@@ -8,7 +8,7 @@ package FlyweightPattern;
 
 /**
  *
- * @author Kurvin Hendricks
+ * @author Dylan
  */
 public class FlyweightMultiplyer implements Flyweight{
     
