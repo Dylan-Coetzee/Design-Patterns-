@@ -34,8 +34,11 @@ public class BridgeTest {
          Vehicle v = new BigBus(new SmallEngine());
          v.drive();
          Vehicle v1 = new BigBus(new SmallEngine());
-         Assert.assertEquals(v.getWeight(), v1.getWeight());
-         
+         Assert.assertEquals(v.getWeight(), v1.getWeight()); 
+     }
+     
+     @Test
+     public void TestBigEngineTest(){
          Vehicle v2 = new BigBus(new BigEngine());
          v2.drive();
          Vehicle v3 = new BigBus(new BigEngine());

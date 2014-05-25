@@ -39,14 +39,19 @@ public class AbstractFactoryPattern {
         Animal a1 = sf.getAnimal("tyrannosaurus");
         Assert.assertEquals(a1.makeSound(), "Roar");
         
+         
+     }
+     
+     @Test
+     public void animalMammalTest(){
+        AbstractFactory af = new AbstractFactory();
         SpeciesFactory sf2 = af.getSpeciesFactory("mammal");
         Animal a2 = sf2.getAnimal("dog");
         Assert.assertEquals(a2.makeSound(), "Woof");
         
         Animal a3 = sf2.getAnimal("cat");
-        Assert.assertEquals(a3.makeSound(), "Meow"); 
+        Assert.assertEquals(a3.makeSound(), "Meow");
      }
-
     @BeforeClass
     public static void setUpClass() throws Exception {
     }
